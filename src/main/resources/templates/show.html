@@ -5,11 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-<h2>Todo List</h2>
-<a href="/">Show all Tasks</a><br />
-Task Name:<span th:text="${item.taskname}"></span><br />
-Due Date:<span th:text="${item.duedate}"></span><br />
-Priority:<span th:text="${item.priority}"></span><br />
-<a th:href="@{/delete/{id}(id=${item.id})}">Delete this Task</a><br />
+<h2>Car Inventory</h2>
+<a href="/">Show all cars</a><br />
+Year:<span th:text="${car.year}"></span><br />
+Make:<span th:text="${car.make}"></span><br />
+Model:<span th:text="${car.model}"></span><br />
+<a th:href="@{/delete/{id}(id=${car.id})}">Delete this car</a><br />
 </body>
 </html>
